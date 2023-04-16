@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/about", data.getAllAbout);
 router.get("/skills", data.getAllSkills);
 router.get("/services", data.getAllServices);
-router.get("/qualifications", data.getAllQualifications);
 router.get("/contacts", data.getAllContacts);
+router.get("/testimonials", data.getAllTestimonials);
 
 module.exports = router;
