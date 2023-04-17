@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-// const data = require("./index.json");
+const path = require("path");
 
 const PORT = 3001;
 const app = express();

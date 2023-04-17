@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const Testimonial = mongoose.model("Testimonial", {
-  testi: String,
+  testimonial: String,
   picture: String,
   title: String,
   sub: String,
