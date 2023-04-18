@@ -1,20 +1,18 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
 
 const PORT = 3001;
 const app = express();
 
-const aboutData = require("./routes/dataRoute");
+const dataRoute = require("./routes/dataRoute");
+const projectRoute = require("./routes/projectRoute");
 
 app.use(cors());
 app.use(express.json());
+app.use("/images", express.static("images"));
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.use("/data", aboutData);
+app.use("/data", dataRoute);
+app.use("/project", projectRoute);
 
 app;
 app.listen(PORT, () => {
