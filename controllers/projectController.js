@@ -1,7 +1,7 @@
-require("../utils/db");
+require("../config/db");
 const Project = require("../models/project");
 
-const contactController = {
+const projectController = {
   createProjectReq: async (req, res) => {
     try {
       const newProject = await Project.create(req.body);
@@ -19,4 +19,4 @@ const contactController = {
   },
 };
 
-module.exports = contactController;
+module.exports = projectController;

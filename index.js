@@ -14,7 +14,6 @@ app.use("/images", express.static("images"));
 app.use("/data", dataRoute);
 app.use("/project", projectRoute);
 
-app;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });

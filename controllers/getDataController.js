@@ -1,4 +1,4 @@
-require("../utils/db");
+require("../config/db");
 const About = require("../models/about");
 const Skills = require("../models/skill");
 const Services = require("../models/service");

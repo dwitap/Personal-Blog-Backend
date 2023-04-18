@@ -1,8 +1,8 @@
 const express = require("express");
-const contactController = require("../controllers/contactController");
+const projectController = require("../controllers/projectController");
 
 const router = express.Router();
 
-router.post("/", contactController.createProjectReq);
+router.post("/", projectController.createProjectReq);
 
 module.exports = router;

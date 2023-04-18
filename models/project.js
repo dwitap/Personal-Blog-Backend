@@ -2,15 +2,15 @@ const mongoose = require("mongoose");
 
 const Project = mongoose.model("Project", {
   name: {
-    require: true,
+    required: true,
     type: String,
   },
   email: {
-    require: true,
+    required: true,
     type: String,
   },
-  description: {
-    require: true,
+  project: {
+    required: true,
     type: String,
   },
 });
